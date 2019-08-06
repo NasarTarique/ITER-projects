@@ -1,2 +1,2 @@
-# ITER-projects
-Project Euler  qs
+# Project Euler 
+Project Euler Problems
