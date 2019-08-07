@@ -1,21 +1,17 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
 int main()
 {
-    long int  sum=0,sum_sq=0,diff;
+    int  sum=0,sum_sq=0,diff;
+    int n;
 
-
-    for(int i=1;i<=100;i++)
-    {
-        sum_sq+=i*i;
-        sum+=i;
-
-    }
-
-    diff=(sum*sum)-sum_sq;
+    cout<<"enter the no. upto which the difference between square of sum and sum sum of square is to be found  ";
+    cin>>n;
+        sum_sq=(n*(n+1)*(2*n+1))/6;
+        sum=(n*(n+1))/2;
+   diff=(sum*sum)-sum_sq;
 
     cout<<"difference="<<diff;
 

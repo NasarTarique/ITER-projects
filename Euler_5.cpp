@@ -11,7 +11,7 @@ int main()
    for(i=40;;i+=20)
     {
         flag=0;
-    for(j=1;j<=20;j++)
+    for(j=11;j<=20;j++)
        if(i%j!=0){
         flag++;
        break;    }
