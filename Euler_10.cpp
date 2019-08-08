@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -9,7 +10,7 @@ int check_prime( int n )
     if(n%2==0)
         return 0;
 
-    for (i=3;i<n;i+=2)
+    for (i=3;i<=sqrt(n);i+=2)
      if(n%i==0)
     {
         return 0;
