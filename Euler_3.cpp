@@ -1,6 +1,9 @@
 #include <iostream>
+#include <math.h>
+
 
 using namespace std;
+
 
 int main()
 {
@@ -11,20 +14,19 @@ int main()
 
    for(i=2;i<=sqrt(num);i++)
    {
-       if((n%i)==0)
-       {
         while((n%i)==0)
        {   cout<<"\nprime factors="<<i;
            pf=i;
            n=n/i;
 
        };
-       }
+
    }
 
-     cout<<"\nlargest prime factor="<<pf;
+    cout<<" \nlargest prime factor ="<<pf;
 
 
-
-    return 0;
+   return 0;
 }
+
+
