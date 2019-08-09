@@ -2,28 +2,32 @@
 
 using namespace std;
 
+uintmax_t hcf(uintmax_t x, uintmax_t y )
+{   uintmax_t z,h,i;
+    if(x>y)
+      z=y;
+    else
+      z=x;
+
+    for( i =1 ; i<=z;i++)
+        if(x%i==0&&y%i==0)
+         h=i;
+
+return h;
+
+}
+uintmax_t lcm( uintmax_t a,uintmax_t b)
+{
+    return a*b/hcf(a,b);
+
+}
 int main()
 {
-   uintmax_t  i;
-   int j,flag;
-
-
-   for(i=40;;i+=20)
-    {
-        flag=0;
-    for(j=11;j<=20;j++)
-       if(i%j!=0){
-        flag++;
-       break;    }
-    if(flag==0)
-    {
-        cout<<"smallest positive number that is evenly divisible by all of the numbers from 1 to 20 = "<<i;
-        break;
-    }
-
-
-    }
-
-    return 0;
+   uintmax_t l=1,j;
+   for( j=2;j<=20;j++)
+        l=lcm(l,j);
+   cout<<"smallest positive number that is evenly divisible by all of the numbers from 1 to 20 = "<<l;
+   return 0;
 }
+
 
